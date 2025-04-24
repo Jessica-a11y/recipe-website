@@ -1,3 +1,4 @@
+/* Header and nav */
 .header {
     display: flex;
     align-items: center;
@@ -6,15 +7,39 @@
     padding-inline: 1.3rem;
 }
 
+.header > div > img {
+    margin-left: 0.5rem;
+}
+
 .header-icons {
     width: 22px;
     height: 22px;
-    margin-left: 0.5rem;
 }
 
 h1 {
     font-size: x-large;
     font-family:Arial, Helvetica, sans-serif;
     font-style: italic;
-   
+    margin-block: 0.5rem;
+}
+
+main {
+    margin: 3rem;
+}
+
+/* All select options */
+.top-selections{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.top-selections > select {
+    border-color: #EFEFEF;
+    border-radius: 1px;
+    color:#7e7e7e;
+    font-style: italic;
+    padding: 0.2rem;
+    width: 102px;
+    height: 26px;
 }

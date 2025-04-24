@@ -1,21 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
     <title>Document</title>
 </head>
+
 <body>
     <header class="header">
-        <div>
-            <img class="header-icons" src="img/menu.png" alt="hamburger-menu">
-        </div>   
+        <img class="header-icons" src="img/menu.png" alt="hamburger-menu">
         <h1>Receptsök</h1>
         <div>
             <img class="header-icons" src="img/setting.png" alt="settings">
             <img class="header-icons" src="img/user-icon.png" alt="user-icon">
         </div>
     </header>
+
+    <main>
+        <div class="top-selections">
+            <select class="top-select-box">
+                <option value"" disabled selected>Event...</option>
+                <option>Bröllop</option>
+                <option>Fest</option>
+                <option>Konferens</option>
+            </select>
+            <select>
+                <option value="" disabled selected>Kök...</option>
+            </select>
+            <select>
+                <option value="" disabled selected>Protein..</option>
+            </select>
+            <select>
+                <option value="" disabled selected>Tillbehör..</option>
+            </select>
+            <select>
+                <option value="" disabled selected>Rätt..</option>
+            </select>
+        </div>
+        <div>
+            <input type="text" maxlength="10" placeholder="Maxpris...">
+            <input type="text" maxlength="10" placeholder="Antal gäster...">
+        </div>
+    </main>
 </body>
+
 </html>
