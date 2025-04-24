@@ -1,22 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
     <title>Document</title>
 </head>
+
 <body>
     <header class="header">
-        <div>
-            <img class="header-icons" src="img/menu.png" alt="hamburger-menu">
-        </div>   
+        <img class="header-icons" src="img/menu.png" alt="hamburger-menu">
         <h1>Receptsök</h1>
         <div>
             <img class="header-icons" src="img/setting.png" alt="settings">
             <img class="header-icons" src="img/user-icon.png" alt="user-icon">
         </div>
     </header>
+
+    <main>
+        <div class="top-selections">
+            <select class="top-select-box">
+                <option disabled selected>Event...</option>
+                <option>Bröllop</option>
+                <option>Fest</option>
+                <option>Konferens</option>
+            </select>
+            <select class="top-select-box">
+                <option disabled selected>Kök...</option>
+            </select>
+            <select class="top-select-box">
+                <option disabled selected>Protein..</option>
+            </select>
+            <select class="top-select-box">
+                <option disabled selected>Tillbehör..</option>
+            </select>
+            <select class="top-select-box">
+                <option disabled selected>Rätt..</option>
+            </select>
+        </div>
+        <div class="bottom-selections">
+            <div>
+                <input class="top-select-box adjustments" type="text" maxlength="10" placeholder="Maxpris...">
+                <input class="top-select-box adjustments" type="text" maxlength="10" placeholder="Antal gäster...">
+            </div>
+            <div class="add-group">
+                <img src="img/cross.png" alt="remove">
+                <span>Lägg till kostgrupp</span>
+            </div>
+        </div>
+    </main>
 
     <div class="columnOne">
         <div class="addedChoices">
@@ -28,4 +61,5 @@
 </div>
     </div>
 </body>
+
 </html>
