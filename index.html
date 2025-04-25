@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
+    <script defer src="script.js"></script>
     <title>Document</title>
 </head>
 
@@ -45,46 +46,105 @@
                 <input class="top-select-box adjustments" type="text" maxlength="10" placeholder="Antal gäster...">
             </div>
             <div class="add-group">
-                <img src="img/cross.png" alt="remove">
-                <span>Lägg till kostgrupp</span>
+                <button id="open-dialog-one"><img src="img/plus2.png" alt="remove">Lägg till kostgrupp</button>
             </div>
         </div>
-    </main>
 
-    <div class="columnOne">
-        <div class="addedChoices">
-        <h2>Tillagda val</h2>
-        <div class="foodChoices">
-        <div class="foodChoicesRow1">
-            <p>Potatis<img src="img/cross.png" alt="remove"></p>
-            <p>Kål<img src="img/cross.png" alt="remove"></p>
-            <p>Middag<img src="img/cross.png" alt="remove"></p>
+
+        <div class="columnOne">
+            <div class="addedChoices">
+                <h2>Tillagda val</h2>
+                <div class="foodChoices">
+                    <div class="foodChoicesRow1">
+                        <p>Potatis<img src="img/cross.png" alt="remove"></p>
+                        <p>Kål<img src="img/cross.png" alt="remove"></p>
+                        <p>Middag<img src="img/cross.png" alt="remove"></p>
+                    </div>
+                    <div class="foodChoicesRow2">
+                        <p>Bröllop<img src="img/cross.png" alt="remove"></p>
+                        <p>Asiatiskt<img src="img/cross.png" alt="remove"></p>
+                        <p>Kött<img src="img/cross.png" alt="remove"></p>
+                    </div>
+                    <h2>Tillagda kostgrupper</h2>
+                    <div class="chosenGroups">
+                        <span class="vegans">Veganer<img src="img/cross.png" alt="remove"></span>
+                        <span class="vegetarians">Vegetarianer<img src="img/cross.png" alt="remove"></span>
+                        <span class="nutAllergic">Nötallergiker<img src="img/cross.png" alt="remove"></span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="priceMax">
+                <h2>Maxpris totalt</h2>
+                <div class="maxPriceBox">
+                    <p>50 000 kr<img src="img/cross.png" alt="remove"></p>
+                </div>
+            </div>
+            <div class="numberGuests">
+                <h2>Antal gäster</h2>
+                <p>200 totalt</p>
+            </div>
         </div>
-        <div class="foodChoicesRow2">
-            <p>Bröllop<img src="img/cross.png" alt="remove"></p>
-            <p>Asiatiskt<img src="img/cross.png" alt="remove"></p>
-            <p>Kött<img src="img/cross.png" alt="remove"></p>
-        </div>
-        <h2>Tillagda kostgrupper</h2>
-        <div class="chosenGroups">
-        <span class="vegans">Veganer<img src="img/cross.png" alt="remove"></span>
-        <span class="vegetarians">Vegetarianer<img src="img/cross.png" alt="remove"></span>
-        <span class="nutAllergic">Nötallergiker<img src="img/cross.png" alt="remove"></span>
-    </div>
-        </div>
-        
-    </div>
-<div class="priceMax">
-<h2>Maxpris totalt</h2>
-<div class="maxPriceBox">
-<p>50 000 kr<img src="img/cross.png" alt="remove"></p>
-</div>
-</div>
-<div class="numberGuests">
-<h2>Antal gäster</h2>
-<p>200 totalt</p>
-</div>
-    </div>
+
+        <dialog id="dialog-one">
+            <div>
+                <input class="add-group-name" type="text" placeholder="Namn på grupp">
+                <button autofocus id="style-close-dialog-one" class="close-dialog-one"><img src="img/cross.png" alt="close"></button>
+            </div>
+            <div class="amount-of-guests">
+                <input type="text" placeholder="Antal gäster...">
+            </div>
+            <div class="middle-part-dialog-one">
+                <div class="middle-columns-dialog-one">
+                    <p>Specialkost</p>
+                    <div>
+                        <label for="vegan">Vegan</label>
+                        <input type="checkbox" id="vegan" name="vegan">
+                    </div>
+                    <div>
+                        <label for="vegetarian">Vegetarisk</label>
+                        <input type="checkbox" id="vegetarian" name="vegetarian">
+                    </div>
+                    <div>
+                        <label for="halal">Halal</label>
+                        <input type="checkbox" id="halal" name="halal">
+                    </div>
+                    <div>
+                        <label for="kosher">Kosher</label>
+                        <input type="checkbox" id="kosher" name="kosher">
+                    </div>
+                    <div>
+                        <label for="lchf">LCHF</label>
+                        <input type="checkbox" id="lchf" name="lchf">
+                    </div>
+                </div>
+                <div class="middle-columns-dialog-one">
+                    <p>Exkludering</p>
+                    <div>
+                        <label for="nuts">Nötter/fröer</label>
+                        <input type="checkbox" id="nuts" name="nuts">
+                    </div>
+                    <div><label for="seafodd">Fisk/skaldjur</label>
+                        <input type="checkbox" id="seafood" name="seafood">
+                    </div>
+                    <div><label for="dairy">Mjölk/laktos</label>
+                        <input type="checkbox" id="dairy" name="dairy">
+                    </div>
+                    <div><label for="egg">Ägg</label>
+                        <input type="checkbox" id="egg" name="egg">
+                    </div>
+                    <div><label for="gluten">Gluten</label>
+                        <input type="checkbox" id="gluten" name="gluten">
+                    </div>
+                    <input type="text" placeholder="Lätt till annat..">
+                    <div class="add-group-dialog">
+                        <button class="close-dialog-one"><img src="img/plus2.png" alt="remove">Lägg till kostgrupp</button>
+                    </div>
+                </div>
+            </div>
+
+        </dialog>
+    </main>
 </body>
 
 </html>
