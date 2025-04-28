@@ -1,5 +1,6 @@
 html {
     background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -18,7 +19,7 @@ body {
     padding-inline: 1.3rem;
 }
 
-.header > div > img {
+.header>div>img {
     margin-left: 0.5rem;
 }
 
@@ -29,7 +30,6 @@ body {
 
 h1 {
     font-size: small;
-    font-family:Arial, Helvetica, sans-serif;
     font-style: italic;
     margin-block: 0.5rem;
 }
@@ -40,7 +40,7 @@ main {
 }
 
 /* All select options */
-.top-selections{
+.top-selections {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -49,43 +49,43 @@ main {
 .top-select-box {
     border: 1px solid #EFEFEF;
     border-radius: 1px;
-    color:#7e7e7e;
+    color: #7e7e7e;
     font-style: italic;
     width: 6.2rem;
     padding-block: 0.3rem;
 }
 
-.bottom-selections{
+.bottom-selections {
     display: flex;
     justify-content: space-between;
     margin-top: 1.5rem;
 }
 
-.adjustments{
+.adjustments {
     width: 5.85rem;
     margin-right: 0.15rem;
 }
 
-.add-group{
+.add-group {
     display: flex;
     justify-content: center;
 }
 
-.add-group > button {
+.add-group>button {
     background-color: #D9D9D9;
     border-style: none;
     border-radius: 5px;
     font-style: italic;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     align-items: center;
     width: 9rem;
 }
 
-.add-group > button:hover{
+.add-group>button:hover {
     background-color: #a6a4a4;
 }
 
-.add-group > button > img {
+.add-group>button>img {
     margin-right: 0.4rem;
     width: 11px;
     height: 11px;
@@ -93,7 +93,7 @@ main {
 
 /*First grey box*/
 
-.columnOne{
+.columnOne {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     flex-direction: row;
@@ -102,11 +102,10 @@ main {
     margin: auto;
     margin-top: 3rem;
     flex-wrap: wrap;
-    
+
 
 
     h2 {
-        font-family:Arial, Helvetica, sans-serif;
         font-weight: lighter;
         margin-left: 1.5rem;
         font-size: large;
@@ -120,6 +119,7 @@ main {
             display: flex;
             flex-direction: row;
         }
+
         .foodChoicesRow2 {
             display: flex;
             flex-direction: row;
@@ -134,17 +134,20 @@ main {
                 border-radius: 10px;
                 padding: 0.45rem;
             }
+
             .vegetarians {
                 background-color: #7C7BDE;
                 border-radius: 10px;
                 padding: 0.45rem;
             }
+
             .nutAllergic {
                 background-color: #7FE258;
                 border-radius: 10px;
                 padding: 0.45rem;
             }
         }
+
         p {
             justify-content: center;
             margin-left: 1.3rem;
@@ -156,68 +159,142 @@ main {
             border: none;
             border-radius: 10px;
         }
+
         img {
             margin-left: 0.5rem;
             margin-top: 0.3rem;
             width: 15px;
             height: 15px;
-            
+
         }
     }
 }
-    .priceMax {
-        display: grid;
-        flex-direction: column;
-        margin-bottom: 10rem;
+
+.priceMax {
+    display: grid;
+    flex-direction: column;
+    margin-bottom: 10rem;
+    margin-left: 2rem;
+}
+
+.maxPriceBox {
+    display: flex;
+    justify-content: center;
+    margin-left: 1.3rem;
+    width: 7rem;
+    height: 3rem;
+    border-radius: 10px;
+    padding: 0;
+    background-color: #FFFFFF;
+    border: none;
+
+    p {
+        margin-top: 0.6rem;
+        align-items: center;
+
+    }
+
+    img {
+        margin-left: 0.5rem;
+        margin-top: 0.3rem;
+        width: 15px;
+        height: 15px;
+    }
+}
+
+.numberGuests {
+    display: grid;
+    flex-direction: column;
+    margin-bottom: 10rem;
+    margin-left: 3rem;
+
+    p {
         margin-left: 2rem;
+        font-size: larger;
     }
+}
 
-    .maxPriceBox {
-        display: flex;
-        justify-content: center;
-        margin-left: 1.3rem;
-        width: 7rem;
-        height: 3rem;
-        border-radius: 10px;
-        padding: 0;
-        background-color: #FFFFFF;
-        border: none;
+/* Third grey column */
+.column-three {
+    background-color: #EFEFEF;
+    margin-top: 1rem;
+    padding-inline: 2rem;
+}
 
-        p {
-            margin-top: 0.6rem;
-            align-items: center;
-            
-        }
+.column-three-top {
+    display: flex;
+    justify-content: space-between;
+}
 
-        img {
-            margin-left: 0.5rem;
-            margin-top: 0.3rem;
-            width: 15px;
-            height: 15px;
-        }
-    }
-    .numberGuests {
-        display: grid;
-        flex-direction: column;
-        margin-bottom: 10rem;
-        margin-left: 3rem;
+.column-three-top>div>p {
+    margin-left: 1rem;
+    color: #3A75FF;
+    text-decoration: underline;
+    font-style: italic;
+}
 
-        p {
-            margin-left: 2rem;
-            font-size: larger;
-        }
-    }
+.column-three-top>div {
+    display: flex;
+    align-items: center;
+    
+}
+
+.column-three-top>img {
+    margin-top: 1.33em;
+    width: 14px;
+    height: 14px;
+}
+
+.column-three-block-one{
+    display: flex;
+    justify-content: space-between;
+}
+
+.column-three-lists{
+    display: flex;
+    flex-direction: column;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.right-text{
+    text-align: right;
+}
+
+.column-three-block-two {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column-three-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #D9D9D9;
+    font-size: smaller;
+    padding-inline: 0.9rem;
+    padding-top: 0.3rem;
+    padding-bottom: 1rem;    
+}
+.column-three-card > div{
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+
 
 /* Add-group-dialog */
-#dialog-one{
+#dialog-one {
     border-style: none;
     border-radius: 8px;
 }
 
-.amount-of-guests{
+.amount-of-guests {
     margin-top: 1rem;
 
-    input{
+    input {
         width: 30%;
         border-radius: 5px;
         border: 1px solid black;
@@ -225,19 +302,20 @@ main {
     }
 }
 
-.add-group-name{
+.add-group-name {
     border-style: none;
     font-size: large;
     color: black;
 }
 
-#style-close-dialog-one{
+#style-close-dialog-one {
     padding: 0;
     border: none;
     background-color: white;
     float: right;
 }
-#style-close-dialog-one > img {
+
+#style-close-dialog-one>img {
     width: 15px;
     height: 15px;
 }
@@ -247,12 +325,12 @@ main {
     grid-template-columns: 1fr 1fr;
 }
 
-.middle-columns-dialog-one{
+.middle-columns-dialog-one {
     display: flex;
     flex-direction: column;
 }
 
-.middle-columns-dialog-one > input{
+.middle-columns-dialog-one>input {
     width: 68%;
 }
 
@@ -260,22 +338,22 @@ main {
     margin-left: 1rem;
 }
 
-.middle-columns-dialog-one > div {
+.middle-columns-dialog-one>div {
     margin-bottom: 0.5rem;
 }
 
-.middle-columns-dialog-one > div > input {
+.middle-columns-dialog-one>div>input {
     float: right;
     margin-right: 3rem;
 }
 
-.add-group-dialog{
+.add-group-dialog {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
 }
 
-.add-group-dialog > button {
+.add-group-dialog>button {
     background-color: #D9D9D9;
     border-style: none;
     border-radius: 15px;
@@ -285,18 +363,18 @@ main {
     padding-block: 0.4rem;
 }
 
-.add-group-dialog > button:hover{
+.add-group-dialog>button:hover {
     background-color: #a6a4a4;
 }
 
-.add-group-dialog > button > img {
+.add-group-dialog>button>img {
     margin-right: 0.4rem;
     width: 11px;
     height: 11px;
 }
 
 /* Dialog two */
-#dialog-two{
+#dialog-two {
     padding: 0;
     border-radius: 8px;
     border-style: none;
@@ -308,34 +386,34 @@ main {
     padding: 0.5rem;
 }
 
-#style-close-dialog-two{
+#style-close-dialog-two {
     padding: 0;
     border: none;
     background-color: #FF9292;
     float: right;
 }
 
-#style-close-dialog-two > img {
+#style-close-dialog-two>img {
     width: 15px;
     height: 15px;
 }
 
-.main-dialog-two-top  > input{
+.main-dialog-two-top>input {
     width: 5%;
     margin-left: 2.7rem;
 }
 
-.main-dialog-two{
+.main-dialog-two {
     padding: 16px;
 }
 
-.add-group-dialog-two{
+.add-group-dialog-two {
     display: flex;
     justify-content: flex-end;
     margin-top: 2rem;
 }
 
-.add-group-dialog-two > button {
+.add-group-dialog-two>button {
     background-color: #D9D9D9;
     border-style: none;
     border-radius: 15px;
@@ -344,9 +422,6 @@ main {
     align-items: self-end;
 }
 
-.add-group-dialog-two > button:hover{
+.add-group-dialog-two>button:hover {
     background-color: #a6a4a4;
 }
-
-
-
