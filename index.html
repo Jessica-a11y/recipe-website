@@ -89,7 +89,8 @@
         <dialog id="dialog-one">
             <div>
                 <input class="add-group-name" type="text" placeholder="Namn på grupp">
-                <button autofocus id="style-close-dialog-one" class="close-dialog-one"><img src="img/cross.png" alt="close"></button>
+                <button id="style-close-dialog-one" class="close-dialog-one"><img src="img/cross.png"
+                        alt="close"></button>
             </div>
             <div class="amount-of-guests">
                 <input type="text" placeholder="Antal gäster...">
@@ -98,51 +99,113 @@
                 <div class="middle-columns-dialog-one">
                     <p>Specialkost</p>
                     <div>
-                        <label for="vegan">Vegan</label>
-                        <input type="checkbox" id="vegan" name="vegan">
+                        <label for="vegan-one">Vegan</label>
+                        <input type="checkbox" id="vegan-one" name="vegan">
                     </div>
                     <div>
-                        <label for="vegetarian">Vegetarisk</label>
-                        <input type="checkbox" id="vegetarian" name="vegetarian">
+                        <label for="vegetarian-one">Vegetarisk</label>
+                        <input type="checkbox" id="vegetarian-one" name="vegetarian">
                     </div>
                     <div>
-                        <label for="halal">Halal</label>
-                        <input type="checkbox" id="halal" name="halal">
+                        <label for="halal-one">Halal</label>
+                        <input type="checkbox" id="halal-one" name="halal">
                     </div>
                     <div>
-                        <label for="kosher">Kosher</label>
-                        <input type="checkbox" id="kosher" name="kosher">
+                        <label for="kosher-one">Kosher</label>
+                        <input type="checkbox" id="kosher-one" name="kosher">
                     </div>
                     <div>
-                        <label for="lchf">LCHF</label>
-                        <input type="checkbox" id="lchf" name="lchf">
+                        <label for="lchf-one">LCHF</label>
+                        <input type="checkbox" id="lchf-one" name="lchf">
                     </div>
                 </div>
                 <div class="middle-columns-dialog-one">
                     <p>Exkludering</p>
                     <div>
-                        <label for="nuts">Nötter/fröer</label>
-                        <input type="checkbox" id="nuts" name="nuts">
+                        <label for="nuts-one">Nötter/fröer</label>
+                        <input type="checkbox" id="nuts-one" name="nuts">
                     </div>
-                    <div><label for="seafodd">Fisk/skaldjur</label>
-                        <input type="checkbox" id="seafood" name="seafood">
+                    <div><label for="seafood-one">Fisk/skaldjur</label>
+                        <input type="checkbox" id="seafood-one" name="seafood">
                     </div>
-                    <div><label for="dairy">Mjölk/laktos</label>
-                        <input type="checkbox" id="dairy" name="dairy">
+                    <div><label for="dairy-one">Mjölk/laktos</label>
+                        <input type="checkbox" id="dairy-one" name="dairy">
                     </div>
-                    <div><label for="egg">Ägg</label>
-                        <input type="checkbox" id="egg" name="egg">
+                    <div><label for="egg-one">Ägg</label>
+                        <input type="checkbox" id="egg-one" name="egg">
                     </div>
-                    <div><label for="gluten">Gluten</label>
-                        <input type="checkbox" id="gluten" name="gluten">
+                    <div><label for="gluten-one">Gluten</label>
+                        <input type="checkbox" id="gluten-one" name="gluten">
                     </div>
                     <input type="text" placeholder="Lätt till annat..">
                     <div class="add-group-dialog">
-                        <button class="close-dialog-one"><img src="img/plus2.png" alt="remove">Lägg till kostgrupp</button>
+                        <button class="close-dialog-one"><img src="img/plus2.png" alt="remove">Lägg till
+                            kostgrupp</button>
                     </div>
                 </div>
             </div>
+        </dialog>
 
+        <dialog id="dialog-two">
+            <div class="dialog-two-header">
+                <span>Veganer</span>
+                <button id="style-close-dialog-two" class="close-dialog-two"><img src="img/cross.png"
+                        alt="close"></button>
+            </div>
+            <div class="main-dialog-two">
+                <div class="main-dialog-two-top">
+                    <span>Antal gäster</span>
+                    <input type="text" placeholder="29">
+                </div>
+                <div class="middle-part-dialog-one">
+                    <div class="middle-columns-dialog-one">
+                        <p>Specialkost</p>
+                        <div>
+                            <label for="vegan-two">Vegan</label>
+                            <input type="checkbox" id="vegan-two" name="vegan">
+                        </div>
+                        <div>
+                            <label for="vegetarian-two">Vegetarisk</label>
+                            <input type="checkbox" id="vegetarian-two" name="vegetarian">
+                        </div>
+                        <div>
+                            <label for="halal-two">Halal</label>
+                            <input type="checkbox" id="halal-two" name="halal">
+                        </div>
+                        <div>
+                            <label for="kosher-two">Kosher</label>
+                            <input type="checkbox" id="kosher-two" name="kosher">
+                        </div>
+                        <div>
+                            <label for="lchf-two">LCHF</label>
+                            <input type="checkbox" id="lchf-two" name="lchf">
+                        </div>
+                    </div>
+                    <div class="middle-columns-dialog-one">
+                        <p>Exkludering</p>
+                        <div>
+                            <label for="nuts-two">Nötter/fröer</label>
+                            <input type="checkbox" id="nuts-two" name="nuts">
+                        </div>
+                        <div><label for="seafood-two">Fisk/skaldjur</label>
+                            <input type="checkbox" id="seafood-two" name="seafood">
+                        </div>
+                        <div><label for="dairy-two">Mjölk/laktos</label>
+                            <input type="checkbox" id="dairy-two" name="dairy">
+                        </div>
+                        <div><label for="egg-two">Ägg</label>
+                            <input type="checkbox" id="egg-two" name="egg">
+                        </div>
+                        <div><label for="gluten-two">Gluten</label>
+                            <input type="checkbox" id="gluten-two" name="gluten">
+                        </div>
+                        <input type="text" placeholder="Lätt till annat..">
+                        <div class="add-group-dialog-two">
+                            <button class="close-dialog-one">Spara</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </dialog>
     </main>
 </body>

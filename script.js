@@ -12,6 +12,18 @@ Array.from(closeDialogOne).forEach(button => {
     })
 })
 
+const dialogTwo = document.getElementById('dialog-two')
+const openDialogTwo = document.getElementsByClassName('vegans')[0]
+const closeDialogTwo = document.getElementsByClassName('close-dialog-two')
 
+openDialogTwo.addEventListener('click', () => {
+    dialogTwo.showModal()
+})
+
+Array.from(closeDialogTwo).forEach(button => {
+    button.addEventListener('click', () => {
+        dialogTwo.close()
+    })
+})
 
 
