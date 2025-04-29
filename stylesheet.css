@@ -98,77 +98,82 @@ main {
     grid-template-columns: 2fr 1fr 1fr;
     flex-direction: row;
     background-color: #EFEFEF;
-    height: 300px;
+    padding-inline: 2rem;
+    height: 265px;
     margin: auto;
     margin-top: 3rem;
     flex-wrap: wrap;
 
-
-
     h2 {
         font-weight: lighter;
-        margin-left: 1.5rem;
-        font-size: large;
+        margin-left: 0.3rem;
+        font-size: medium;
+    }
+}
+
+.foodChoices {
+    display: flex;
+    flex-direction: column;
+
+    p {
+        justify-content: center;
+        margin-left: 0.2rem;
+        width: 4.5rem;
+        height: 1.4rem;
+        border-radius: 0.1px;
+        padding: 0;
+        background-color: #FFFFFF;
+        border: none;
+        border-radius: 10px;
+        font-size: smaller;
     }
 
-    .foodChoices {
+    img {
+        margin-left: 0.1rem;
+        margin-top: 0.1rem;
+        width: 10px;
+        height: 10px;
+    }
+
+    .foodChoicesRow1 {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+    }
 
-        .foodChoicesRow1 {
-            display: flex;
-            flex-direction: row;
-        }
+    .foodChoicesRow2 {
+        display: flex;
+        flex-direction: row;
+    }
 
-        .foodChoicesRow2 {
-            display: flex;
-            flex-direction: row;
-        }
+    .chosenGroups {
+        margin-left: 0.3rem;
+        margin-top: 0.7rem;
+        display: flex;
+        flex-direction: row;
+        font-size: xx-small;
 
-        .chosenGroups {
-            margin-left: 1.3rem;
-            margin-top: 0.7rem;
-
-            .vegans {
-                background-color: #FF9292;
-                border-radius: 10px;
-                padding: 0.45rem;
-            }
-
-            .vegetarians {
-                background-color: #7C7BDE;
-                border-radius: 10px;
-                padding: 0.45rem;
-            }
-
-            .nutAllergic {
-                background-color: #7FE258;
-                border-radius: 10px;
-                padding: 0.45rem;
-            }
-        }
-
-        p {
-            justify-content: center;
-            margin-left: 1.3rem;
-            width: 5rem;
-            height: 2rem;
-            border-radius: 0.1px;
-            padding: 0;
-            background-color: #FFFFFF;
-            border: none;
+        .vegans {
+            background-color: #FF9292;
             border-radius: 10px;
+            padding: 0.45rem;
+            margin-right: 0.2rem;
         }
 
-        img {
-            margin-left: 0.5rem;
-            margin-top: 0.3rem;
-            width: 15px;
-            height: 15px;
+        .vegetarians {
+            background-color: #7C7BDE;
+            border-radius: 10px;
+            padding: 0.45rem;
+            margin-right: 0.2rem;
+        }
 
+        .nutAllergic {
+            background-color: #7FE258;
+            border-radius: 10px;
+            padding: 0.45rem;
         }
     }
 }
+
 
 .priceMax {
     display: grid;
@@ -180,23 +185,22 @@ main {
 .maxPriceBox {
     display: flex;
     justify-content: center;
-    margin-left: 1.3rem;
+    margin-left: 0.3rem;
     width: 7rem;
-    height: 3rem;
+    height: 2.5rem;
     border-radius: 10px;
     padding: 0;
     background-color: #FFFFFF;
     border: none;
 
     p {
-        margin-top: 0.6rem;
+        margin-top: 0.2rem;
         align-items: center;
-
     }
 
     img {
         margin-left: 0.5rem;
-        margin-top: 0.3rem;
+        margin-top: 0.5rem;
         width: 15px;
         height: 15px;
     }
@@ -205,12 +209,16 @@ main {
 .numberGuests {
     display: grid;
     flex-direction: column;
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
     margin-left: 3rem;
 
+    h2 {
+        font-size: medium;
+    }
+
     p {
-        margin-left: 2rem;
-        font-size: larger;
+        margin-left: 0.3rem;
+        font-size: medium;
     }
 }
 
@@ -236,7 +244,7 @@ main {
 .column-three-top>div {
     display: flex;
     align-items: center;
-    
+
 }
 
 .column-three-top>img {
@@ -245,12 +253,12 @@ main {
     height: 14px;
 }
 
-.column-three-block-one{
+.column-three-block-one {
     display: flex;
     justify-content: space-between;
 }
 
-.column-three-lists{
+.column-three-lists {
     display: flex;
     flex-direction: column;
 }
@@ -259,7 +267,7 @@ main {
     text-align: center;
 }
 
-.right-text{
+.right-text {
     text-align: right;
 }
 
@@ -268,7 +276,7 @@ main {
     justify-content: space-between;
 }
 
-.column-three-card{
+.column-three-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -276,9 +284,10 @@ main {
     font-size: smaller;
     padding-inline: 0.9rem;
     padding-top: 0.3rem;
-    padding-bottom: 1rem;    
+    padding-bottom: 1rem;
 }
-.column-three-card > div{
+
+.column-three-card>div {
     align-items: center;
     margin-bottom: 0.5rem;
 }
