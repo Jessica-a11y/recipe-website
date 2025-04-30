@@ -27,3 +27,16 @@ Array.from(closeDialogTwo).forEach(button => {
 })
 
 
+const showRecipe = document.getElementById('show-recipe')
+const recipe = document.getElementsByClassName('column-three')[0]
+const hideRecipe = document.getElementsByClassName('hide-recipe')
+
+showRecipe.addEventListener('click', () => {
+    recipe.style.display = 'block';
+})
+
+Array.from(hideRecipe).forEach(button => {
+    button.addEventListener('click', () => {
+        recipe.style.display = "none"
+    })
+})
