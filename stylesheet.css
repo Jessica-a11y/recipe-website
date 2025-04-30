@@ -299,6 +299,10 @@ main {
     flex-direction: column;
 }
 
+.column-three-lists > p{
+    text-decoration: underline;
+}
+
 .center-text {
     text-align: center;
 }
@@ -310,6 +314,7 @@ main {
 .column-three-block-two {
     display: flex;
     justify-content: space-between;
+    margin-top: 1rem;
 }
 
 .column-three-card {
@@ -317,6 +322,7 @@ main {
     flex-direction: column;
     align-items: center;
     background-color: #D9D9D9;
+    border-radius: 3px;
     font-size: smaller;
     padding-inline: 0.9rem;
     padding-top: 0.3rem;
@@ -325,7 +331,7 @@ main {
 
 .column-three-card>div {
     align-items: center;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
 }
 
 
