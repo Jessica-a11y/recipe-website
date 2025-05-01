@@ -98,7 +98,7 @@ main {
     grid-template-columns: 2fr 1fr 1fr;
     flex-direction: row;
     background-color: #EFEFEF;
-    padding-inline: 2rem;
+    padding-inline: 1.2rem;
     height: 250px;
     margin: auto;
     margin-top: 3rem;
@@ -209,16 +209,16 @@ main {
 .numberGuests {
     display: grid;
     flex-direction: column;
-    margin-bottom: 8rem;
-    margin-left: 3rem;
+    margin-bottom: 11rem;
+    margin-left: 1.5rem;
 
     h2 {
         font-size: medium;
     }
 
     p {
-        margin-left: 0.3rem;
-        font-size: medium;
+        font-size: small;
+        margin-left: 1rem;
     }
 }
 
@@ -227,7 +227,6 @@ main {
     background-color: #EFEFEF;
     margin-top: 1rem;
     padding-inline: 2rem;
-
 }
 
 .column-two-top {
@@ -237,24 +236,31 @@ main {
 }
 
 .column-two-block {
-    display: flex;
-    justify-content:space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
-.column-two-lists {
-    display: flex;
+.column-two-list-left {
+    display: grid;
     flex-direction: column;
     font-style: italic;
     font-size: small;
-    margin-right: auto;
+    margin-right: 1rem;
 }
 
 .center-text {
-    text-align: end;
-
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    font-size: small;
+    font-style: italic;
 }
 
 .right-text {
     text-align: right;
+    display: grid;
+    flex-direction: column;
+    font-size: small;
+    font-style: italic;
 }
 
 
