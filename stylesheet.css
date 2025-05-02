@@ -37,6 +37,7 @@ h1 {
 main {
     margin-inline: 2.3rem;
     margin-block: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 /* All select options */
@@ -263,6 +264,13 @@ main {
     font-style: italic;
 }
 
+#show-recipe:hover {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
 
 /* Third grey column */
 .column-three {
@@ -354,6 +362,8 @@ main {
     background-color: #E4E4E4;
     align-items: center;
     border-radius: 15px;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
     padding-block: 0.4rem;
     padding-inline: 0.7rem;
     font-size: 0.9rem;
@@ -413,6 +423,7 @@ main {
 
 .middle-columns-dialog-one>input {
     width: 68%;
+    margin-bottom: 2rem;
 }
 
 .middle-columns-dialog-one:has(> input) {
@@ -491,7 +502,6 @@ main {
 .add-group-dialog-two {
     display: flex;
     justify-content: flex-end;
-    margin-top: 2rem;
 }
 
 .add-group-dialog-two>button {
