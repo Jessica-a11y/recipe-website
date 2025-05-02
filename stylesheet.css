@@ -160,6 +160,11 @@ main {
             margin-right: 0.2rem;
         }
 
+        .vegans:hover{
+            background-color: #f7bbbb;
+            cursor: pointer;
+        }
+
         .vegetarians {
             background-color: #7C7BDE;
             border-radius: 10px;
@@ -303,6 +308,11 @@ main {
     height: 14px;
 }
 
+.column-three-top>img:hover {
+    background-color: #a6a4a4;
+    border-radius: 50%;
+}
+
 .column-three-block-one {
     display: flex;
     justify-content: space-between;
@@ -371,7 +381,11 @@ main {
     img {
         width: 11px;
         height: 11px;
-    }
+    } 
+}
+
+.adjustment-column-three:hover {
+    background-color: #a6a4a4;
 }
 
 
@@ -409,6 +423,11 @@ main {
 #style-close-dialog-one>img {
     width: 15px;
     height: 15px;
+}
+
+#style-close-dialog-one>img:hover {
+    background-color: #a6a4a4;
+    border-radius: 50%;
 }
 
 .middle-part-dialog-one {
@@ -488,6 +507,11 @@ main {
 #style-close-dialog-two>img {
     width: 15px;
     height: 15px;
+}
+
+#style-close-dialog-two > img:hover {
+    background-color: #ffbbbb;
+    border-radius: 50%;
 }
 
 .main-dialog-two-top>input {
