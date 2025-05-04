@@ -436,6 +436,10 @@ main {
     flex-direction: column;
 }
 
+.middle-columns-dialog-one>p{
+    padding-bottom: 1rem;
+}
+
 .middle-columns-dialog-one>input {
     width: 68%;
     margin-bottom: 2rem;
@@ -457,7 +461,7 @@ main {
 .add-group-dialog {
     display: flex;
     justify-content: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .add-group-dialog>button {
